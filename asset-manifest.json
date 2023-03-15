@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/collagify/static/css/main.be18513d.css",
-    "main.js": "/collagify/static/js/main.65dd0c01.js",
-    "static/media/spotiLogo.png": "/collagify/static/media/spotiLogo.e219951301ddf739fe9e.png",
-    "static/media/spinner.svg": "/collagify/static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
-    "index.html": "/collagify/index.html",
-    "main.be18513d.css.map": "/collagify/static/css/main.be18513d.css.map",
-    "main.65dd0c01.js.map": "/collagify/static/js/main.65dd0c01.js.map"
+    "main.css": "/git@github.com:Rubicones/collagify.git/static/css/main.be18513d.css",
+    "main.js": "/git@github.com:Rubicones/collagify.git/static/js/main.b30f075a.js",
+    "static/media/spotiLogo.png": "/git@github.com:Rubicones/collagify.git/static/media/spotiLogo.e219951301ddf739fe9e.png",
+    "static/media/spinner.svg": "/git@github.com:Rubicones/collagify.git/static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
+    "index.html": "/git@github.com:Rubicones/collagify.git/index.html",
+    "main.be18513d.css.map": "/git@github.com:Rubicones/collagify.git/static/css/main.be18513d.css.map",
+    "main.b30f075a.js.map": "/git@github.com:Rubicones/collagify.git/static/js/main.b30f075a.js.map"
   },
   "entrypoints": [
     "static/css/main.be18513d.css",
-    "static/js/main.65dd0c01.js"
+    "static/js/main.b30f075a.js"
   ]
 }

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/git@github.com:Rubicones/collagify.git/static/css/main.be18513d.css",
-    "main.js": "/git@github.com:Rubicones/collagify.git/static/js/main.b30f075a.js",
+    "main.js": "/git@github.com:Rubicones/collagify.git/static/js/main.6a5c8ede.js",
     "static/media/spotiLogo.png": "/git@github.com:Rubicones/collagify.git/static/media/spotiLogo.e219951301ddf739fe9e.png",
     "static/media/spinner.svg": "/git@github.com:Rubicones/collagify.git/static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
     "index.html": "/git@github.com:Rubicones/collagify.git/index.html",
     "main.be18513d.css.map": "/git@github.com:Rubicones/collagify.git/static/css/main.be18513d.css.map",
-    "main.b30f075a.js.map": "/git@github.com:Rubicones/collagify.git/static/js/main.b30f075a.js.map"
+    "main.6a5c8ede.js.map": "/git@github.com:Rubicones/collagify.git/static/js/main.6a5c8ede.js.map"
   },
   "entrypoints": [
     "static/css/main.be18513d.css",
-    "static/js/main.b30f075a.js"
+    "static/js/main.6a5c8ede.js"
   ]
 }

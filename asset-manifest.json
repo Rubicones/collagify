@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/collagify/static/css/main.95a066d7.css",
-    "main.js": "/collagify/static/js/main.24f44a60.js",
+    "main.js": "/collagify/static/js/main.07882878.js",
     "static/media/spotiLogo.png": "/collagify/static/media/spotiLogo.e219951301ddf739fe9e.png",
     "static/media/spinner.svg": "/collagify/static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
     "index.html": "/collagify/index.html",
     "main.95a066d7.css.map": "/collagify/static/css/main.95a066d7.css.map",
-    "main.24f44a60.js.map": "/collagify/static/js/main.24f44a60.js.map"
+    "main.07882878.js.map": "/collagify/static/js/main.07882878.js.map"
   },
   "entrypoints": [
     "static/css/main.95a066d7.css",
-    "static/js/main.24f44a60.js"
+    "static/js/main.07882878.js"
   ]
 }

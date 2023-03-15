@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rubicones/collagify/static/css/main.be18513d.css",
-    "main.js": "/Rubicones/collagify/static/js/main.148305f9.js",
-    "static/media/spotiLogo.png": "/Rubicones/collagify/static/media/spotiLogo.e219951301ddf739fe9e.png",
-    "static/media/spinner.svg": "/Rubicones/collagify/static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
-    "index.html": "/Rubicones/collagify/index.html",
-    "main.be18513d.css.map": "/Rubicones/collagify/static/css/main.be18513d.css.map",
-    "main.148305f9.js.map": "/Rubicones/collagify/static/js/main.148305f9.js.map"
+    "main.css": "./static/css/main.be18513d.css",
+    "main.js": "./static/js/main.5d86138a.js",
+    "static/media/spotiLogo.png": "./static/media/spotiLogo.e219951301ddf739fe9e.png",
+    "static/media/spinner.svg": "./static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
+    "index.html": "./index.html",
+    "main.be18513d.css.map": "./static/css/main.be18513d.css.map",
+    "main.5d86138a.js.map": "./static/js/main.5d86138a.js.map"
   },
   "entrypoints": [
     "static/css/main.be18513d.css",
-    "static/js/main.148305f9.js"
+    "static/js/main.5d86138a.js"
   ]
 }

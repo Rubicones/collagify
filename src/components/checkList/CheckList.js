@@ -2,7 +2,7 @@ import "./CheckList.css"
 import SpotifyService from "../services/SpotifyService"
 import {ReactComponent as Spinner} from "../../img/spinner.svg"
 import { useEffect, useState } from "react"
-import { click } from "@testing-library/user-event/dist/click"
+
 function ListItem({selectedID, selected, name, id}) {
     return(
         <li className={(selectedID == id) ? "search-item search-item__active" : "search-item"} onClick={selected}>{name}</li>
@@ -25,33 +25,34 @@ function CheckList(props) {
 
     const setItemList = (array) => {
         setItems(array.map(item => <ListItem name={item[1]} key={item[0]} id={item[0]} selectedID={selected} selected={() => onItemSelect(item)}/>))
-
     }
 
     useEffect(() => {
-        if (props.switch == 1){
-            if (!artists.length){
-                setLoad(true)
-                service.setFollowedArtists()
-                .then(res => {
-                    updArtists(res)
-                })
+        if (!props.loginView){
+            if (props.switch == 1){
+                if (!artists.length){
+                    setLoad(true)
+                    service.setFollowedArtists()
+                    .then(res => {
+                        updArtists(res)
+                    })
+                }
+                setItemList(artists)
             }
-            setItemList(artists)
-        }
-        if (props.switch == 2){
-            if (!playlists.length){
-                setLoad(true)
-                service.setFollowedPlaylists()
-                .then(res => {
-                    updPlaylists(res)
-                })
-            } 
-            setItemList(playlists)
-        }
-        if (props.switch == 3){
-            if (totalTracks === null){
-                service.getSavedTracks(20, 0).then((res) => setTotalTracks(res.total))
+            if (props.switch == 2){
+                if (!playlists.length){
+                    setLoad(true)
+                    service.setFollowedPlaylists()
+                    .then(res => {
+                        updPlaylists(res)
+                    })
+                } 
+                setItemList(playlists)
+            }
+            if (props.switch == 3){
+                if (totalTracks === null){
+                    service.getSavedTracks(20, 0).then((res) => setTotalTracks(res.total))
+                }
             }
         }
     }, [props])

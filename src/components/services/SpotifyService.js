@@ -1,69 +1,5 @@
 let Spotify = require("spotify-web-api-js");
 
-function findDominant(imageUrl) {
-  return new Promise((resolve, reject) => {
-    // Load the image from the given URL
-    let img = new Image();
-    img.crossOrigin = "anonymous"; // Set the crossOrigin attribute to "anonymous"
-    img.src = imageUrl;
-
-    // Wait for the image to load before processing it
-    img.onload = function() {
-      // Create a canvas element and draw the image on it
-      let canvas = document.createElement("canvas");
-      canvas.width = img.width;
-      canvas.height = img.height;
-      let ctx = canvas.getContext("2d");
-      ctx.drawImage(img, 0, 0);
-
-      // Get the image data from the canvas
-      let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      let pixels = imageData.data;
-
-      // Loop through the pixels and count the occurrences of each color
-      let colorCounts = {};
-      for (let i = 0; i < pixels.length; i += 4) {
-        let r = pixels[i];
-        let g = pixels[i+1];
-        let b = pixels[i+2];
-        let color = rgbToHex(r, g, b);
-        if (color in colorCounts) {
-          colorCounts[color]++;
-        } else {
-          colorCounts[color] = 1;
-        }
-      }
-
-      // Find the color with the highest occurrence count
-      let dominantColor = null;
-      let maxCount = 0;
-      for (let color in colorCounts) {
-        if (colorCounts[color] > maxCount) {
-          dominantColor = color;
-          maxCount = colorCounts[color];
-        }
-      }
-
-      // Resolve with the dominant color as a hex value
-      resolve(dominantColor);
-    };
-
-    // Reject the promise if the image fails to load
-    img.onerror = function() {
-      reject(new Error("Failed to load image from URL"));
-    };
-  });
-    // Utility function to convert RGB to hex
-  function rgbToHex(r, g, b) {
-    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-  }
-  
-  // Utility function to convert a component to a two-digit hex value
-  function componentToHex(c) {
-    let hex = c.toString(16);
-    return hex.length === 1 ? "0" + hex : hex;
-  }
-}
 
 class SpotifyService{
   spotifyApi = new Spotify();
@@ -73,7 +9,7 @@ class SpotifyService{
   client_secret = "cedf0d5444154f968dfc92c1ca974e5e";
   access_token = localStorage.getItem("access_token");
   refresh_token
-  redirect_uri = "https://collagify.netlify.app/" // сюда кидать свой сервер
+  redirect_uri = "http://localhost:3000/" // сюда кидать свой сервер
 
   requestAuthorization = () => {
     this.client_id = "7cf19d9a363446d79276d46b37418a9f";
@@ -213,6 +149,9 @@ class SpotifyService{
         res.items.forEach(item => playlists.push([item.id, item.name]))
         offset += limit
         total = res.total
+      }).catch((res) => {
+        console.log("failed")
+        console.log(res)
       })
     }
     return playlists
@@ -273,7 +212,7 @@ class SpotifyService{
       })
     }
 
-    return Array.from(new Set(albums))
+    return albums
   }
 
   async getFollowedArtists(limit, after) {

@@ -5,13 +5,13 @@
 }
 
 .choose-search__container{
-    margin-top: 50px;
+    margin-top: 2vw;
     width: 50vw;
     height: 50vh;
-    min-height: 450px;
+    min-height: 10vh;
     border-radius: 2vw;
     background-color: #24d34d00;
-    border: 5px solid #ffffff83;
+    border: 0.5vw solid #ffffff83;
     overflow: scroll;
     display: flex;
     justify-content: center;
@@ -48,19 +48,19 @@
 
 .search-item:hover{
     background-color: #afafaf83;
-    border-radius: 6px;
+    border-radius: 0.5vw;
 }
 
 .search-item::after{
     content: "";
     display: block;
     width: 40vw;
-    height: 3px;
+    height: 0.2vw;
     background-color: #ffffff83;
 }
 
 .wholeLibHeader{
-    margin-top: 10vh;
+    margin-top: 3vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;

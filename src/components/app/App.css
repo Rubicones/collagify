@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    height: 200px;
+    height: 10vw;
     width: 100%;
 
 }
@@ -12,7 +12,7 @@ h1{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 5vw;
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
@@ -20,11 +20,11 @@ h1{
 
 h2{
     width: 70%;
-    margin: 80px auto 3vw auto;
+    margin: 5vw auto 3vw auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.025em;
@@ -40,7 +40,7 @@ h2{
 
 .subheader-container{
     width: 100%;
-    height: 80px;
+    height: 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,7 +53,7 @@ h2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.7vw;
     text-align: center;
     letter-spacing: 0.025em;
     color: #FFFFFF;
@@ -67,7 +67,7 @@ h2{
 
 .col-size{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 5vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -75,7 +75,7 @@ h2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
     text-align: center;
     letter-spacing: 0.025em;
     color: #FFFFFF;
@@ -99,7 +99,7 @@ h2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 2.5vw;
     line-height: 100%;
     width: 35vw;
     height: 40vh;
@@ -135,3 +135,57 @@ h2{
     height: 60%;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10vw;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    h2{
+        width: 70%;
+        margin: 10vw auto 3vw auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: 0.025em;
+        color: #FFFFFF;
+    }
+
+    .modalEnter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5vw;
+        line-height: 100%;
+        width: 55vw;
+        height: 55vw;
+        border-radius: 2vw;
+        background-color: black;
+        color: white;
+        z-index: 10;
+    }
+
+    .enterSpoti{
+        height: 10vw;
+        width: 32vw;
+        background-color: #24D34E;
+        border-radius: 3vw;
+        margin-top: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+  }

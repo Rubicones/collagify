@@ -1,18 +1,8 @@
 .rows_choose{
-    width: 700px;
+    width: 45vw;
 }
-
-.cols_choose{
-    margin-top: 1.5vw;
-    width: 700px;
-}
-
 
 #rangeRows::-webkit-slider-thumb {
-    background: #ffffff;
-}
-
-#rangeCols::-webkit-slider-thumb {
     background: #ffffff;
 }
 
@@ -21,7 +11,7 @@
 }
 
 .counter{
-    font-size: 35px;
+    font-size: 2vw;
 }
 
 .inputCont{
@@ -33,6 +23,6 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.7vw;
 
 }

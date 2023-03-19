@@ -9,7 +9,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 2.5vw;
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.025em;
@@ -22,9 +22,9 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 10px;
-    border: 2px solid #ffffff83;
-    border-radius: 5px;
+    margin-bottom: 1vw;
+    border: 0.2vw solid #ffffff83;
+    border-radius: 0.5vw;
 }
 
 .square{
@@ -32,11 +32,23 @@
     height: 100%;
     background-color: rgba(250, 235, 215, 0);
     box-sizing: border-box;
-    border: 1px solid #ffffff83;
+    border: 0.1vw solid #ffffff83;
     box-sizing: border-box;
 	background-size:cover; 
 	background-position:center; 
 	background-repeat:no-repeat; 
+}
+
+.preview-header-loading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-top: 1vw;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
 }
 /* 
 .previewImage{

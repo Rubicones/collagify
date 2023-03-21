@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.be18513d.css",
-    "main.js": "./static/js/main.bed19341.js",
+    "main.js": "./static/js/main.3f83c6c6.js",
     "static/media/spotiLogo.png": "./static/media/spotiLogo.e219951301ddf739fe9e.png",
     "static/media/spinner.svg": "./static/media/spinner.44da6d5c0c790dfcd29332b943d73bbd.svg",
     "index.html": "./index.html",
     "main.be18513d.css.map": "./static/css/main.be18513d.css.map",
-    "main.bed19341.js.map": "./static/js/main.bed19341.js.map"
+    "main.3f83c6c6.js.map": "./static/js/main.3f83c6c6.js.map"
   },
   "entrypoints": [
     "static/css/main.be18513d.css",
-    "static/js/main.bed19341.js"
+    "static/js/main.3f83c6c6.js"
   ]
 }
